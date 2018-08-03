@@ -15,12 +15,10 @@ var guesses = 9;
 
 var guessedLetters = [];
 
-var letterToGuess = null;
-
-
+computerChoices[0]
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)]
 console.log(computerGuess)
-
+  
 
 
 
@@ -45,6 +43,44 @@ document.onkeyup = function(event) {
 
 }
 
+var wins= 0
+wins++
+wins = 10
+
+
+
+
+
+
+var html = "" +
+
+        "<p>Wins: " + 
+
+        wins + 
+
+        "</p>" +
+
+        "<p>Losses: " + 
+
+        losses + 
+
+        "</p>" +
+
+        "<p>Guesses Left: " + (9 - guesses) 
+
+        +
+
+        "<p>Your Guesses so far: " + userGuess
+
+        guesses +
+
+        "</p>";
+
+
+var winsInHTML = document.getElementById('wins')
+
+
+ winsInhtml.innerHTML(wins)
 
 
 
